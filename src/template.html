@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Chrome, Firefox OS and Opera -->
+    <!-- Chrome, Firefox OS dan Opera -->
     <meta name="theme-color" content="#141852" />
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#141852" />
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#141852" />
 
-    <!-- Primary Meta Tags -->
-    <title>Happy Birthday to You!!!</title>
-    <meta name="title" content="Happy Birthday to You" />
-    <meta name="description" content="Wishing you a very Happy Birthday Dear" />
+    <!-- Meta Utama -->
+    <title>Selamat Ulang Tahun Untukmu!!!</title>
+    <meta name="title" content="Selamat Ulang Tahun Untukmu" />
+    <meta
+      name="description"
+      content="Semoga kamu mendapatkan ulang tahun yang sangat bahagia"
+    />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Happy Birthday to you" />
+    <meta property="og:title" content="Selamat Ulang Tahun Untukmu" />
     <meta
       property="og:description"
-      content="Wishing you a very Happy Birthday Dear"
+      content="Semoga kamu mendapatkan ulang tahun yang sangat bahagia"
     />
     <meta
       property="og:image"
@@ -32,7 +35,7 @@
       rel="stylesheet"
     />
 
-    <!--Generated Read Time Var-->
+    <!-- Generated Read Time Var -->
     {{^READ_TIME}}
 
     <link rel="stylesheet" href="./scss/main.scss" />
@@ -43,72 +46,83 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.png">
     <link rel="manifest" href="./resources/favicon/site.webmanifest">
 
-    <!-- animation    -->
+    <!-- Animasi -->
     <script src="./js/index.js" type="module" defer></script>
-
-    <!-- some extensions -->
   </head>
+
   <body>
-    <!-- Sfx calling -->
+    <!-- Pemanggilan suara -->
 
     <audio class="blast-aud">
       <source src="./resources/sfx/blast.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
+      Browser Anda tidak mendukung elemen audio.
     </audio>
+
     <audio class="hbd-aud">
       <source src="./resources/sfx/hbd.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
+      Browser Anda tidak mendukung elemen audio.
     </audio>
+
     <audio class="switch-aud">
       <source src="./resources/sfx/switch.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
+      Browser Anda tidak mendukung elemen audio.
     </audio>
+
     <audio class="door-aud">
       <source src="./resources/sfx/door.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
+      Browser Anda tidak mendukung elemen audio.
     </audio>
+
     <audio class="haunt-aud">
       <source src="./resources/sfx/haunted-bgm.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
+      Browser Anda tidak mendukung elemen audio.
     </audio>
 
     <div class="content">
       <img
         src="./resources/img/flag-right.png"
-        alt="flags"
+        alt="bendera"
         class="flag flag--c-left"
       />
+
       <img
         src="./resources/img/flag-left.png"
-        alt="flags"
+        alt="bendera"
         class="flag flag--left"
       />
+
       <img
         src="./resources/img/flag-left.png"
-        alt="flags"
+        alt="bendera"
         class="flag flag--c-right"
       />
+
       <img
         src="./resources/img/flag-right.png"
-        alt="flags"
+        alt="bendera"
         class="flag flag--right"
       />
+
       <img
         src="./resources/img/balloon-left.png"
-        alt="balloon-left"
+        alt="balon kiri"
         class="balloon balloon--left"
       />
+
       <img
         src="./resources/img/balloon-right.png"
-        alt="balloon-right"
+        alt="balon kanan"
         class="balloon balloon--right"
       />
+
       <div class="frame">
         <div class="img-back">
           <div class="bd-pic"></div>
+
           <img class="cap" src="./resources/img/bday-cap.svg" alt="" />
           <img class="confetti" src="./resources/img/confetti.svg" alt="" />
           <img class="cake" src="./resources/img/cake.svg" alt="" />
+
           <div class="velas">
             <div class="fuego"></div>
             <div class="fuego"></div>
@@ -117,6 +131,7 @@
             <div class="fuego"></div>
           </div>
         </div>
+
         <div class="HBD-text">
           <p class="HBD">{{^HBD_MSG}}</p>
           <p class="nickname">{{^NICKNAME}}</p>
@@ -126,35 +141,40 @@
       <div class="frame frame2">
         <div class="scroll">
           <div class="text">{{^SCROLL_MSG}}</div>
+        </div>
       </div>
     </div>
 
     <div class="flash"></div>
 
     <div class="giftroom">
-      <p class="gift-text">Wow! That was something weird.</p>
-      <p class="gift-text">Hey look! There's a gift for you..</p>
-      <p class="gift-text">C'mon, let's open it and see what's in there!</p>
+      <p class="gift-text">Wow! Itu tadi agak aneh ya.</p>
+      <p class="gift-text">Hei lihat! Ada hadiah untukmu..</p>
+      <p class="gift-text">
+        Yuk, kita buka dan lihat ada apa di dalamnya!
+      </p>
     </div>
 
     <div class="hallway">
-      <p class="hall-text">Hey!</p>
-      <p class="hall-text">Maybe it's a bit late to move in the hallway,</p>
-      <p class="hall-text">Things are creepy here...</p>
-      <p class="hall-text">I think we should go back inside.</p>
+      <p class="hall-text">Hei!</p>
+      <p class="hall-text">
+        Mungkin sudah agak malam untuk berjalan di lorong ini,
+      </p>
+      <p class="hall-text">Tempat ini terasa menyeramkan...</p>
+      <p class="hall-text">Kurasa kita sebaiknya kembali ke dalam.</p>
     </div>
 
     <div class="empty-room">
-      <p class="room-text">Ok! Why is it so empty here?</p>
-      <p class="room-text">You know what, let's move outside.</p>
-      <p class="room-text">Let's see if anyone's over there...</p>
+      <p class="room-text">Oke! Kenapa ruangan ini kosong sekali?</p>
+      <p class="room-text">Tau nggak, ayo kita keluar saja.</p>
+      <p class="room-text">Mari lihat apakah ada seseorang di luar...</p>
     </div>
 
     <div class="darkroom">
-      <p class="bb-text">Hey!</p>
-      <p class="bb-text">Why is it so dark here?</p>
+      <p class="bb-text">Hei!</p>
+      <p class="bb-text">Kenapa gelap sekali di sini?</p>
       <p class="bb-text">
-        <span class="name">{{^NAME}}</span>! Can you please switch on the lights?
+        <span class="name">{{^NAME}}</span>! Bisa tolong nyalakan lampunya?
       </p>
     </div>
 
